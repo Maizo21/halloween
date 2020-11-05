@@ -12,7 +12,7 @@ swal.fire({
  */
 function historia() {
     story.innerHTML = '';
-    
+
     let stories = [
         
     "Una cara sonriente me está espiando desde la oscuridad, detrás de la ventana de mi dormitorio.<br><br> No seria para nada un problema si no fuese porque vivo en un noveno piso. <br> <img src='https://d.wattpad.com/story_parts/3/images/14cca5c116141672527199415465.jpg'>",
@@ -45,7 +45,7 @@ function historia() {
     
     "Hace unas noches recibi una llamada de skype de un número desconocido<br><br>Lo desconcertante fue que la llamada mostraba la vista desde fuera de mi ventana. <br> <img src='https://rosarioplus-assets.tadevel.xyz/5f4b79c012b5372badfeb982/image.jpeg'>"
     
-        ];
+    ];
         
         let random = Math.floor(Math.random() * stories.length)
         
