@@ -40,15 +40,16 @@ body {
     
     .menu{
         margin:auto;
-        
         margin-bottom:50px;
         display:flex;
         justify-content:flex-end;
         font-family: 'Creepster', cursive;
+        position: relative;
+        left: -50;
     }
     
     .menu-image{
-        width:80px;
+        width:100px;
     }
     
     
@@ -59,10 +60,10 @@ body {
     .nav li a{
         color:white;
         text-decoration:none;
-        padding:5px;
+        padding:2px;
         display:block;
         position: relative;
-        left: -100px;
+        left: -80px;
         transition: 0.8s;
     }
 

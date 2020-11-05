@@ -17,9 +17,9 @@ function historia() {
         
     "Una cara sonriente me está espiando desde la oscuridad, detrás de la ventana de mi dormitorio.<br><br> No seria para nada un problema si no fuese porque vivo en un noveno piso. <br> <img src='https://d.wattpad.com/story_parts/3/images/14cca5c116141672527199415465.jpg'>",
     
-    "'No puedo dormir', me susurró ella, mientras le hacia un espacio en la cama conmigo. <br><br> Desperté con frío, abrazando el vestido con el que fue sepultada hace 2 meses. <br> <img src = 'https://estaticos.elmundo.es/assets/multimedia/imagenes/2017/02/13/14869916219776.jpg'> ", 
+    "«No puedo dormir», me susurró ella, mientras le hacia un espacio en la cama conmigo. <br><br> Desperté con frío, abrazando el vestido con el que fue sepultada hace 2 meses. <br> <img src = 'https://estaticos.elmundo.es/assets/multimedia/imagenes/2017/02/13/14869916219776.jpg'> ", 
     
-    "Mi hijo me despertó en la madrugada, 'papá, hay un monstruo debajo de mi cama'.<br><br> No quedo de otra, fui a mirar y allí no había nada, como era de esperar, entonces escuché a mi hijo con voz temblorosa: 'papá, hay un monstruo sobre mi cama'. <br> <img src='https://1.bp.blogspot.com/-xYU3KBxZeWs/WpJD3ybvxsI/AAAAAAAAHTY/3buSmIyNUH8KBw_Al4GA8Frhb3aMLUxZACLcBGAs/s1600/fantasma-cama.jpg'>",
+    "Mi hijo me despertó en la madrugada, «papá, hay un monstruo debajo de mi cama».<br><br> No quedo de otra, fui a mirar y allí no había nada, como era de esperar, entonces escuché a mi hijo con voz temblorosa: «papá, hay un monstruo sobre mi cama». <br> <img src='https://1.bp.blogspot.com/-xYU3KBxZeWs/WpJD3ybvxsI/AAAAAAAAHTY/3buSmIyNUH8KBw_Al4GA8Frhb3aMLUxZACLcBGAs/s1600/fantasma-cama.jpg'>",
 
     "Nunca antes había visto a una niña llorar tan desconsoladamente. <br><br> Y menos aún en un hospital abandonado. <br> <img src='https://www.roastbrief.com.mx/wp-content/uploads/2017/10/roastbrief-3-teor%C3%ADas-sobre-la-%E2%80%9Cni%C3%B1a-fantasma%E2%80%9D-que-se-aparece-en-las-agencias-de-publicidad.jpg'>",
     
