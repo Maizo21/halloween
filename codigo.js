@@ -1,4 +1,3 @@
-
 swal.fire({
     title:'¡Spooky time!', 
     html:
@@ -8,8 +7,7 @@ swal.fire({
     position: 'top-start',
     confirmButtonColor: 'black',
 });
-/* alert("Si te gustó, el fantasma tiene mis rrss 👻. Ahora si, haz click en el libro y que comience el terror. 🎃");
- */
+
 function historia() {
     story.innerHTML = '';
 
@@ -47,13 +45,13 @@ function historia() {
     
     ];
         
-        let random = Math.floor(Math.random() * stories.length)
+    let random = Math.floor(Math.random() * stories.length)
         
-        let selection = stories[random];
+    let selection = stories[random];
         
-        story.innerHTML += (`<div class="story"><span>Historia:</span> <br><br> ${selection} <br><br> <span>¿Quieres mas? Presiona el libro </span></div>`);
-    }
-    let story = document.getElementById("space");
-    
-    let button = document.getElementById("button");
-    button.addEventListener("click",historia);
+    story.innerHTML += (`<div class="story"><span>Historia:</span> <br><br> ${selection} <br><br> <span>¿Quieres mas? Presiona el libro </span></div>`);
+}
+
+let story = document.getElementById("space");
+let button = document.getElementById("button");
+button.addEventListener("click",historia);
