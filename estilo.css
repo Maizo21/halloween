@@ -123,17 +123,23 @@ ul{
     clear: both;
     color: white;
     text-align: center;
-    height: 100px;
-    background:rgb(0, 0, 0);
+    height: 120px;
+    background:rgba(0, 0, 0, 0.9);
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    place-content: center center;
 }
     
 .logo{
     display: flex;
     justify-content: center;
+    margin: 0;
+    padding: 0;
 }
     
 .logo-img{
-    width: 40px;
+    width: 50px;
+    height: 40px;
 }
 
 @media screen and (max-width: 500px){
