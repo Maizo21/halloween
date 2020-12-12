@@ -7,7 +7,6 @@ body {
     }
 
 .container{
-    width: 900px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -41,7 +40,7 @@ body {
     margin:auto;
     margin-bottom:50px;
     grid-column: 2/2;
-    font-family: 'Creepster', cursive;  
+    font-family: 'Creepster', cursive;
 }
     
 .menu-image{
@@ -93,18 +92,20 @@ ul{
     background:rgba(0, 0, 0, 0.8);
     border-radius: 5px;
     padding: 5px;
+    display: grid;
 }
     
 .story span{ 
     font-family: 'Creepster', cursive;
     font-size:20px;
+    place-self: center;
 }
     
 .story img{
-    width:100px;
     border-radius:10px;
-    margin:2px;
-    max-height: 100px;
+    margin-top:15px;
+    max-height: 150px;
+    place-self: center;
 }
     
 #button{
@@ -133,4 +134,40 @@ ul{
     
 .logo-img{
     width: 40px;
+}
+
+@media screen and (max-width: 500px){
+
+    .container{
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 180px);;
+    }
+
+    .story{
+        display: grid;
+    }
+
+    .story img{
+        margin-top: 5px;
+        max-width: 150px;
+    }
+
+    .stories{
+        margin: 0;
+        grid-row: 3;
+        grid-column: 1/-1;
+    }
+
+    .menu-image{
+        width: 50%;
+    }
+    
+    #button{
+        width: 50%;
+        grid-column: 1;
+        grid-row: 2;
+        place-self: end end;
+    }
 }

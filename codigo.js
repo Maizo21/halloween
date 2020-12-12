@@ -1,4 +1,4 @@
-/* swal.fire({
+swal.fire({
     title:'¡Spooky time!', 
     html:
     '<p style="color: white; font-weight:bolder;" >¡Hola! Hice este proyecto por halloween. <br/><br/>Toca el libro para empezar<p> 👻 😈', 
@@ -6,7 +6,7 @@
     background: 'rgba(0, 0, 0, 0.7)',
     position: 'top-start',
     confirmButtonColor: 'black',
-}); */
+});
 
 function historia() {
     story.innerHTML = '';
@@ -49,7 +49,7 @@ function historia() {
         
     let selection = stories[random];
         
-    story.innerHTML += (`<div class="story"><span>Historia:</span> <br><br> ${selection} <br><br> <span>¿Quieres mas? Presiona el libro </span></div>`);
+    story.innerHTML += (`<div class="story"><span>Historia:</span><br> ${selection} <br> <span>¿Quieres mas? Presiona el libro </span></div>`);
 }
 
 let story = document.getElementById("space");
