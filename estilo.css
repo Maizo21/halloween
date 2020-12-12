@@ -1,6 +1,6 @@
 body {
     background: url(https://i.pinimg.com/originals/99/15/14/99151403cfeb9aa35e12ea7d85d87fc8.jpg) no-repeat;
-    background-size:100%;
+    background-size:cover;
     color:white;
     padding:0px;
     margin:0px;
@@ -9,7 +9,6 @@ body {
 .container{
     width: 900px;
     margin: 0 auto;
-    min-height: calc(100vh - 50px - 71px);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 160px);;
@@ -23,7 +22,7 @@ body {
 }
 
 .title:hover{
-    color:orange;
+    color:rgb(255, 166, 0);
 }
     
 .title-container{
@@ -63,6 +62,12 @@ ul{
     transition: 0.8s;
 }
 
+.nav li ul{
+    display:none;
+    position:absolute;
+    min-width:100px;
+}
+
 .nav li a:hover{
     color: orange;
 }
@@ -72,31 +77,19 @@ ul{
     border-radius:20px;
 }
 
-.nav li ul{
-    display:none;
-    position:absolute;
-    min-width:100px;
-}
-    
 .nav li:hover> ul{
     display:block;
 }
     
-.nav li ul li{
-    position:relative;
-}
-    
-.nav li ul li ul{
-    float:left;
-}
-    
 .stories{
     margin: 80px 5px 5px 5px;
+    grid-row: 2;
+    grid-column: 1/1;
 }
-    
+
 .story{
     border:1px solid darkred;
-    margin:10px 0px;
+    margin:0 auto;
     background:rgba(0, 0, 0, 0.8);
     border-radius: 5px;
     padding: 5px;
@@ -117,6 +110,8 @@ ul{
 #button{
     width:150px;
     cursor:pointer;
+    grid-column: 2;
+    grid-row: 4;
 }
     
 #button:active{
