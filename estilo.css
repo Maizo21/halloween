@@ -124,10 +124,13 @@ ul{
     color: white;
     text-align: center;
     height: 120px;
+    width: 100%;
     background:rgba(0, 0, 0, 0.9);
     display: grid;
     grid-template-rows: repeat(2,1fr);
-    place-content: center center;
+    place-content: center;
+    place-items: center;
+    margin: 0 auto;
 }
     
 .logo{

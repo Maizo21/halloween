@@ -1,12 +1,12 @@
-swal.fire({
+/* swal.fire({
     title:'¡Spooky time!', 
     html:
     '<p style="color: white; font-weight:bolder;" >¡Hola! Hice este proyecto por halloween. <br/><br/>Toca el libro para empezar<p> 👻 😈', 
     width:'400px',
     background: 'rgba(0, 0, 0, 0.7)',
-    position: 'top-start',
+    position: 'center',
     confirmButtonColor: 'black',
-});
+}); */
 
 function historia() {
     story.innerHTML = '';
