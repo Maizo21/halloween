@@ -11,6 +11,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 160px);;
+    height: 80vh
 }
     
 .title{
@@ -54,6 +55,7 @@ ul{
 .nav li a{
     color:white;
     text-decoration:none;
+    font-size: .8rem;
     padding:2px;
     display:block;
     position: relative;
@@ -69,11 +71,6 @@ ul{
 
 .nav li a:hover{
     color: orange;
-}
-    
-.nav li a:active{
-    background-color:red;
-    border-radius:20px;
 }
 
 .nav li:hover> ul{
@@ -123,14 +120,14 @@ ul{
     clear: both;
     color: white;
     text-align: center;
-    height: 120px;
-    width: 100%;
+    margin-top: 8vh;
+    height: 10vh;
     background:rgba(0, 0, 0, 0.9);
     display: grid;
     grid-template-rows: repeat(2,1fr);
     place-content: center;
     place-items: center;
-    margin: 0 auto;
+    padding: 10px;
 }
     
 .logo{
@@ -145,14 +142,15 @@ ul{
     height: 40px;
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 900px){
 
     .container{
-        margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 180px);;
+        height: 760px;
     }
+
 
     .story{
         display: grid;
@@ -170,8 +168,10 @@ ul{
     }
 
     .menu-image{
-        width: 50%;
+        width: 40%;
     }
+
+    
     
     #button{
         width: 50%;
@@ -179,4 +179,20 @@ ul{
         grid-row: 2;
         place-self: end end;
     }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px){
+
+    .menu-image{
+        width: 80px;
+    }
+
+    .nav li a{
+        font-size: .8rem;
+    }
+
+    #button{
+        width: 100px;
+    }
+
 }
