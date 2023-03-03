@@ -54,10 +54,10 @@ function showSocial() {
   }
 }
 
-document.addEventListener("keydown", function (e) {
+/* document.addEventListener("keydown", function (e) {
   if (e.key === "Escape" && !social.classList.contains("hidden")) {
     showSocial();
   }
 });
 ghost.addEventListener("mouseup", showSocial);
-ghost.addEventListener("mouseover", showSocial);
+ghost.addEventListener("mouseover", showSocial); */
