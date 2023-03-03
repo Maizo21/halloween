@@ -1,146 +1,377 @@
+:root {
+  --pumpkin: #ce8054;
+  --orange: #b35340;
+  --dark-red: #6f3637;
+  --blood: #4b2b31;
+  --night: #233342;
+  font-size: 35px;
+}
+
+html {
+  height: 100%;
+}
+
 body {
-    background: url(https://i.pinimg.com/originals/99/15/14/99151403cfeb9aa35e12ea7d85d87fc8.jpg) no-repeat;
-    background-size:100%;
-    color:white;
-    padding:0px;
-    margin:0px;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(180deg, #7e5b5c, var(--blood));
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.title-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+}
+
+.title {
+  color: #dbd8cc;
+  font-family: "Creepster", cursive;
+  letter-spacing: 5px;
+  font-size: 2rem;
+  text-align: center;
+  background-image: linear-gradient(#311d21, #180a0b);
+  width: 50%;
+  border: 4px solid #170103;
+  border-radius: 20px;
+  transition: all 2s;
+}
+
+.title:hover {
+  color: var(--pumpkin);
+}
+
+.title-image {
+  width: 25%;
+}
+
+/*menu*/
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 0 auto;
+}
+
+.nav {
+  min-height: 400px;
+}
+
+.nav li {
+  text-decoration: none;
+  list-style: none;
+}
+
+/*fantasmita*/
+.nav li .menu-image {
+  justify-self: flex-end;
+  width: 120px;
+  transition: 0.5s linear;
+}
+
+.nav li .menu-image:hover {
+  filter: opacity(0.4);
+}
+
+/*Propiedad para ocultar .Social, se quitara por medio de js*/
+
+.hidden {
+  display: none;
+}
+
+/*Social*/
+
+.nav li a {
+  font-family: "Creepster", cursive;
+  color: white;
+  letter-spacing: 2px;
+  position: relative;
+
+  transition: 0.8s;
+  text-decoration: none;
+}
+
+.nav li a:hover {
+  color: orange;
+}
+
+/*Historias*/
+
+/*Verificar tamaño de la caja para cuando cambie de cuento*/
+
+.story {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  color: rgb(221, 221, 221);
+  padding-left: 15px;
+  font-size: 0.9rem;
+}
+
+.story .span {
+  margin-top: 10px;
+  font-family: "Creepster", cursive;
+  font-size: 1.1rem;
+  align-self: center;
+  justify-self: center;
+}
+
+.story img {
+  width: 15%;
+  height: auto;
+  border-radius: 15px;
+  margin-top: 25px;
+  align-self: center;
+  justify-self: center;
+}
+
+/*Dar estilos al boton*/
+
+#button {
+  width: 200px;
+  cursor: pointer;
+  padding-left: 10%;
+}
+
+#button:active {
+  transform: scale(0.9);
+}
+
+.footer {
+  clear: both;
+  color: white;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 5px;
+}
+
+.footer p {
+  font-size: 0.8rem;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.logo-img {
+  width: 50px;
+  height: 40px;
+}
+
+.nav li:hover .social {
+  display: block;
+}
+
+.nav li .social {
+  position: absolute;
+  padding: 0;
+  right: 2vw;
+}
+
+/* .menu-image:hover ~ .social {
+  display: block;
+}
+ */
+/*Responsive*/
+
+@media (max-width: 1300px) {
+  .title-image {
+    width: 40%;
+  }
+  .menu {
+    margin-bottom: -10%;
+  }
+
+  .nav li .menu-image {
+    padding-left: 0;
+    position: relative;
+  }
+
+  .nav li ul {
+    line-height: 0.8rem;
+  }
+
+  .nav li a {
+    position: relative;
+    font-size: 0.5rem;
+  }
+
+  .story {
+    font-size: 0.5rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .nav li .menu-image {
+    width: 15%;
+    padding-left: 500px;
+  }
+
+  .nav li ul {
+    line-height: 0.8rem;
+  }
+
+  .nav li a {
+    font-size: 0.6rem;
+    left: 500px;
+    position: relative;
+  }
+
+  .story {
+    font-size: 0.7rem;
+  }
+
+  .story .span {
+    font-size: 0.9rem;
+  }
+
+  .story img {
+    width: 30%;
+  }
+
+  #button {
+    width: 20%;
+  }
+}
+
+@media only screen and (min-width: 100px) and (max-width: 830px) {
+  .nav {
+    padding: 0;
+  }
+
+  .nav li.sub-menu {
+    width: fit-content;
+    max-width: 50px;
+  }
+
+  .nav li .menu-image {
+    width: 100%;
+    position: relative;
+  }
+}
+
+@media (max-width: 800px) {
+  .menu {
+    margin-bottom: -15%;
+  }
+
+  .nav li a {
+    font-size: 0.8rem;
+    left: 400px;
+    position: relative;
+  }
+
+  .story {
+    font-size: 0.6rem;
+  }
+
+  .story .span {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .title {
+    width: 80%;
+  }
+
+  .nav {
+    min-height: 260px;
+  }
+
+  .nav li .menu-image {
+    padding-left: 0;
+  }
+
+  .nav li ul li a {
+    line-height: 1rem;
+    left: 0;
+    margin-bottom: 100px;
+  }
+
+  .footer p {
+    font-size: 0.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .title {
+    width: 90%;
+    font-size: 1.5rem;
+  }
+
+  .nav {
+    min-height: 200px;
+  }
+
+  .social li a {
+    font-size: 0.6rem;
+  }
+
+  .story {
+    font-size: 0.5rem;
+  }
+
+  .story .span {
+    font-size: 0.6rem;
+  }
+
+  .story img {
+    width: 60%;
+    margin-top: 10px;
+  }
+
+  #button {
+    width: 30%;
+  }
+}
+
+@media (max-width: 350px) {
+  .title {
+    width: 95%;
+  }
+
+  .story {
+    font-size: 0.45rem;
+  }
+
+  .nav li ul li {
+    line-height: 0rem;
+  }
+
+  .nav li ul li a {
+    font-size: 0.5rem;
+  }
+
+  .nav li ul li:nth-child(2) a {
+    padding-left: 0%;
+  }
+
+  .nav li ul li:nth-child(3) a {
+    padding-left: 0%;
+  }
+
+  @keyframes moving {
+    0% {
+      transform: translateX(-200%);
     }
 
-    .container{
-        width: 900px;
-        margin: 0 auto;
-        display: inherit;
-        justify-content: inherit;
-        align-items: inherit;
-        min-height: calc(100vh - 50px - 71px);
-    
-    }
-    
-    .title{
-        text-align:center;
-        font-size:35px;
-        font-family: 'Creepster', cursive;
-        transition: 1s;
+    50% {
+      transform: translateX(50%);
     }
 
-    .title:hover{
-        color:orange;
+    100% {
+      transform: translateX(-200%) rotateY(364deg);
     }
-    
-    .title-container{
-        border: 1px solid;
-        border-radius:10px;
-        background:rgba(0, 0, 0, 0.5);
-        margin-top: 5px;
-    }
-    
-    .title-image{
-        width:100px;
-    }
-    
-    .menu{
-        margin:auto;
-        
-        margin-bottom:50px;
-        display:flex;
-        justify-content:flex-end;
-        font-family: 'Creepster', cursive;
-    }
-    
-    .menu-image{
-        width:80px;
-    }
-    
-    
-    ul{
-        list-style:none;
-    }
-    
-    .nav li a{
-        color:white;
-        text-decoration:none;
-        padding:5px;
-        display:block;
-        position: relative;
-        left: -100px;
-        transition: 0.8s;
-    }
-
-    .nav li a:hover{
-        color: orange;
-    }
-    
-    .nav li a:active{
-        background-color:red;
-        border-radius:20px;
-    }
-    
-    
-    .nav li ul{
-        display:none;
-        position:absolute;
-        min-width:100px;
-    }
-    
-    .nav li:hover> ul{
-        display:block;
-    }
-    
-    .nav li ul li{
-        position:relative;
-    }
-    
-    .nav li ul li ul{
-        float:left;
-    }
-    
-    
-    .stories{
-        margin: 80px 5px 5px 5px;
-    }
-    
-    .story{
-        border:1px solid darkred;
-        margin:10px 0px;
-        background:rgba(0, 0, 0, 0.8);
-        border-radius: 5px;
-        padding: 5px;
-    }
-    
-    .story span{ 
-        font-family: 'Creepster', cursive;
-        font-size:20px;
-    }
-    
-    .story img{
-        width:100px;
-        border-radius:10px;
-        margin:2px;
-        max-height: 100px;
-    }
-    
-    #button{
-        width:150px;
-        cursor:pointer;
-    }
-    
-    #button:active{
-        transform:scale(.9);
-    }
-    
-    .footer{
-        clear: both;
-        color: white;
-        text-align: center;
-        height: 100px;
-        background:rgb(0, 0, 0);
-    }
-    
-    .logo{
-        display: flex;
-        justify-content: center;
-    }
-    
-    .logo-img{
-        width: 40px;
-    }
+  }
+}
